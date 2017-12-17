@@ -1,0 +1,22 @@
+.about-container {
+	height: 100%;
+	padding: 0px 50px;
+  background-color: rgb(50, 50, 50);
+}
+
+.about-detail {
+  text-align: center;
+  max-height: 300px;
+  margin: 20px 0px;
+	color: floralwhite;
+}
+
+.about-detail h1 {
+  margin-top: 10px;
+	color: whitesmoke;
+}
+
+.about-detail a {
+  text-decoration: none;
+  color: white;
+}

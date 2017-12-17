@@ -9,6 +9,8 @@ import Home from './containers/Home';
 import About from './containers/About';
 import Blog from './containers/Demo';
 import Demo from './containers/Blog';
+import './css/index.css';
+import './css/layout/layout.css';
 
 const store = createStore(
 	reducer,

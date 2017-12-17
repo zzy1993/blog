@@ -5,13 +5,13 @@ import Footer from './Footer';
 export default class Layout extends React.Component {
   render() {
     return (
-			<div>
-		    <Header />
-		    <div className="middle">
+		  <div className="wrapper">
+			  <Header />
+			  <div className="content">
 				  {this.props.children}
-		    </div>
+			  </div>
 			  <Footer />
-			</div>
+		  </div>
     );
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
-// import '../../css/home/homebanner.css';
+import '../css/home/banner.css';
 
-const PATH_HEADSHOT = "./public/img/headshot.jpg";
+const PATH_HEADSHOT = "/img/headshot.jpg";
 
 export default class HomeBanner extends React.Component {
   render() {

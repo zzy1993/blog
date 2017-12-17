@@ -14,6 +14,8 @@ export default class Blog extends React.Component {
   render() {
     return (
 	    <Layout>
+		    <div ref={node => this.node = node} >
+		    </div>
 	    </Layout>
     );
   }
