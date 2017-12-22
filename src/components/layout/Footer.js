@@ -1,11 +1,11 @@
 import React from 'react';
-import '../css/layout/footer.css';
+import './footer.css';
 
 export default class Footer extends React.Component {
   render() {
     return (
-      <div className="home-footer">
-        <p>️zhiyuan</p>
+      <div className="footer">
+        <p>&copy;️zhiyuan</p>
       </div>
     );
   }

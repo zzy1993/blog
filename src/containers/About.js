@@ -1,16 +1,14 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import '../css/about/about.css';
+import Layout from '../components/layout/Layout';
+import './about.css';
 
 export default class About extends React.Component {
-  componentDidMount() {
-    this.node.scrollIntoView();
-  }
+
   render() {
     return (
 	    <Layout>
-	      <div className="main" ref={node => this.node = node} >
-	        <div className="main-container about-container">
+	      <div className="container">
+	        <div className="container-inner about-container">
 	          <div className="about-detail about-desc">
 	            <h1>About Me</h1>
               <p>From Electronics to Computer Engineering</p>

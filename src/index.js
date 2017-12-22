@@ -4,13 +4,12 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import thunk from 'redux-thunk';
-import reducer from './reducers/index';
+import reducer from './redux/reducers/index';
 import Home from './containers/Home';
 import About from './containers/About';
-import Blog from './containers/Demo';
-import Demo from './containers/Blog';
-import './css/index.css';
-import './css/layout/layout.css';
+import Blog from './containers/Blog';
+import Demo from './containers/Demo';
+import './index.css';
 
 const store = createStore(
 	reducer,

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/home/banner.css';
+import './banner.css';
 
 const PATH_HEADSHOT = "/img/headshot.jpg";
 

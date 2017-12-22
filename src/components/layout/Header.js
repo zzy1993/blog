@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../css/layout/header.css';
+import './header.css';
 
 export default class HomeHeader extends React.Component {
   render() {

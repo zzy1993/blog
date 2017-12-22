@@ -1,0 +1,16 @@
+.blog-background{
+	background-color: #f5f5f5;
+}
+
+.blog-article-area{
+	margin-right: 10px;
+	padding: 10px 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.blog-aside-area{
+	margin-left: 10px;
+	padding: 10px 10px;
+}

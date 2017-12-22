@@ -1,18 +1,15 @@
 .home-banner {
-  width: 100%;
-  height: 500px;
   display: flex;
   align-items: center;
 }
 
 .home-banner-me {
   width: 400px;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 
 .home-banner-photo {
   width: 400px;
-  height: 100%;
   text-align: center;
 }
 
@@ -22,7 +19,6 @@
 }
 
 .home-banner-desc {
-  height: 60%;
   margin-top: 10px;
   text-align: center;
   color: rgb(255, 255, 255);
