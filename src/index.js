@@ -5,10 +5,10 @@ import { Provider } from 'react-redux';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import thunk from 'redux-thunk';
 import reducer from './redux/reducers/index';
-import Home from './containers/Home';
-import About from './containers/About';
-import Blog from './containers/Blog';
-import Demo from './containers/Demo';
+import Home from './components/home/Home';
+import About from './components/about/About';
+import Blog from './components/blog/Blog';
+import Demo from './components/demo/Demo';
 import './index.css';
 
 const store = createStore(

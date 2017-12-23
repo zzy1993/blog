@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../components/layout/Layout';
-import Banner from '../components/home/Banner';
+import Layout from '../layout/Layout';
+import Banner from './Banner';
 
 export default class Home extends React.Component {
   render() {

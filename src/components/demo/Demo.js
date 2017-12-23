@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../components/layout/Layout';
-import '../components/home/demo.css';
+import Layout from '../layout/Layout';
+import '../home/demo.css';
 
 export default class Blog extends React.Component {
 

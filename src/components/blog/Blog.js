@@ -1,20 +1,12 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import Layout from '../components/layout/Layout';
-import ArticleList from '../components/blog/ArticleList';
-import ArticlePaging from '../components/blog/ArticlePaging';
-import Aside from '../components/blog/Aside';
+import Layout from '../layout/Layout';
+import ArticleList from './ArticleList';
+import ArticlePaging from './ArticlePaging';
+import Aside from './Aside';
 import './blog.css';
 
 export default class Blog extends React.Component {
-
-	componentWillMount(){
-
-	}
-
-	componentWillUpdate(){
-
-	}
 
   render() {
     return (
