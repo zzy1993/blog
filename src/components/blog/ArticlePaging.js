@@ -1,23 +1,17 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import { Pagination } from 'antd';
 
 export default class ArticlePaging extends React.Component {
-	constructor() {
-		super();
-		this.onChangePage = this.onChangePage.bind(this);
-	}
-
-	onChangePage(pageNumber) {
-		this.props.handlePageChange(pageNumber);
-	}
 
 	render() {
+		const { switchPage, pageSize, total } = this.props;
 		return (
 			<div className="blog-article-paging">
-				<Pagination onChange={this.onChangePage}
-				            defaultPageSize={this.props.defaultPageSize}
-				            total={this.props.total} />
+				<Pagination onChange={switchPage}
+				            defaultPageSize={pageSize}
+				            total={total} />
 			</div>
 		);
 	}
