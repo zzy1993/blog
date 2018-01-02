@@ -6,11 +6,12 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import thunk from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import reducer from './redux/reducers/index';
-import Home from './components/home/Home';
-import About from './components/about/About';
-import Blog from './components/blog/Blog';
-import Demo from './components/demo/Demo';
-import './index.css';
+import Home from './components/Home';
+import About from './components/About';
+import BlogContainer from './components/Blog/index.container';
+import ArticleContainer from './components/Article/index.container';
+import './css/index.css';
+import './css/shared.css';
 
 const store = createStore(
 	reducer,
@@ -26,8 +27,9 @@ ReactDOM.render(
 			<Switch>
 				<Route exact path="/" component={Home}/>
 				<Route path="/about" component={About}/>
-				<Route path="/blog" component={Blog}/>
-				<Route path="/demo" component={Demo}/>
+				<Route exact path="/blog" component={BlogContainer}/>
+				<Route path="/blog/tag/:tagName" component={BlogContainer}/>
+				<Route path="/article/:articleId" component={ArticleContainer}/>
 			</Switch>
 		</HashRouter>
 	</Provider>,

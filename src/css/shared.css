@@ -1,0 +1,34 @@
+/*float*/
+
+.top {
+	float:top;
+}
+.bottom {
+	float:bottom;
+}
+.left {
+	float:left;
+}
+.right {
+	float: right;
+}
+
+/*background-color*/
+
+.bgcl-black {
+	background-color: #191919;
+}
+
+.bgcl-dark {
+	background-color: #4b4b4b;
+}
+
+.bgcl-bright {
+	background-color: #dcdcdc;
+}
+
+/*box-shadow*/
+
+.shadow-large {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+}

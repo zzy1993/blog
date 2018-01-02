@@ -1,26 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ArticleItem from './ArticleItem';
-import ArticleLabel from './ArticleLabel';
-import './article.css';
+import ArticleCard from './ArticleCard';
 
-export default class ArticleList extends React.Component {
-
-	render() {
-		console.log("ArticleList", this.props);
-		const { articles, pageSize, pageNumber } = this.props;
-		let start = (pageNumber - 1) * pageSize;
-		let end = Math.min(pageNumber * pageSize, articles.length);
-		return (
-			<div className="blog-article-list">
-				{articles.slice(start, end)
-					.map((article) => (
-					<ArticleItem key={article.id} article={article}/>
-					)
-				)}
-			</div>
-		);
-	}
+const ArticleList = ({ articles, pageSize, pageNumber }) => {
+	let start = (pageNumber - 1) * pageSize;
+	let end = Math.min(pageNumber * pageSize, articles.length);
+	return (
+		<div className="article-list">
+			{articles.slice(start, end)
+				.map((article) => (
+				<ArticleCard key={article.id} {...article}/>
+				)
+			)}
+		</div>
+	);
 }
 
 ArticleList.defaultProps = {
@@ -35,3 +28,4 @@ ArticleList.propTypes = {
 	pageSize: PropTypes.number,
 };
 
+export default ArticleList;

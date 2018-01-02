@@ -1,0 +1,195 @@
+.blog .main-container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.blog .article-container {
+	padding: 10px 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.blog .article-banner {
+	width: 100%;
+	padding: 10px 20px;
+	margin-bottom: 2px;
+	background-color: rgb(255, 255, 255);
+}
+
+.blog .article-banner h2 {
+	font-size: 16px;
+	padding-left: 20px;
+	line-height: 50px;
+}
+
+.blog .article-banner p {
+	font-size: 14px;
+	padding-left: 20px;
+	line-height: 50px;
+}
+
+.blog .article-list {
+	width: 100%;
+}
+
+.blog .article-item {
+	padding: 30px 20px;
+	margin-bottom: 2px;
+	background-color: white;
+}
+
+.blog .article-item-title {
+	height: 50px;
+	font-size: 1.8em;
+}
+
+.blog .article-item-title a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+.blog .article-item-label {
+	display: inline-block;
+	height: 30px;
+	font-size: 1.3em;
+}
+
+.blog .article-item-time {
+	display: inline-block;
+	height: 30px;
+	font-size: 1.3em;
+}
+
+.blog .label {
+	display: inline-block;
+	margin: 0px 5px 5px;
+	border-radius: 3px;
+	font-size: 1em;
+}
+
+.blog .label a {
+	display: inline-block;
+	padding: 6px 8px;
+	color: white;
+}
+
+.blog .article-item-label i {
+	margin-left: 5px;
+}
+
+.blog .article-item-desc {
+	font-size: 1.3em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.blog .article-item-desc-more {
+	float: right;
+}
+
+.blog .article-item-desc-more a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+.blog .article-paging {
+	width: 100%;
+	height: 50px;
+	font-size: 1.3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+}
+
+/*pagination*/
+
+.ant-pagination-item:hover {
+	border-color: rgb(50, 50, 50);
+}
+
+.ant-pagination-item:hover a {
+	color: rgb(50, 50, 50);
+}
+
+.ant-pagination-item-active {
+	background-color: rgb(50, 50, 50);
+	border-color: rgb(50, 50, 50);
+}
+
+.ant-pagination-item-active:focus, .ant-pagination-item-active:hover {
+	background-color: rgb(50, 50, 50);
+	border-color: rgb(50, 50, 50);
+}
+
+.ant-pagination-item-active:focus, .ant-pagination-item-active:hover a {
+	color: rgb(255, 255, 255);
+}
+
+.ant-pagination-prev:hover, .ant-pagination-next:hover {
+	color: rgb(50, 50, 50);
+	border-color: rgb(50, 50, 50);
+}
+
+
+
+/*aside*/
+
+.blog .aside-container{
+	padding: 10px 10px;
+}
+
+
+.blog .aside {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.blog .aside-card {
+	width: 100%;
+	min-height: 100px;
+}
+
+.blog .aside-card-title {
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: 2px;
+	text-align: center;
+	background-color: white;
+}
+
+.blog .aside-card-title a {
+	font-size: 20px;
+	font-weight: 600;
+	color: rgb(0, 0, 0);
+}
+
+.blog .aside-card-content {
+	padding: 10px 10px;
+	margin-bottom: 2px;
+	background-color: white;
+}
+
+.blog .aside-card-content-clear {
+	margin-left: 10px;
+}
+
+.blog .aside-card-content li:hover {
+	/*background-color: rgba(0, 0, 0, 0.3);*/
+	color: rgba(255, 255, 255, 1);
+}
+
+.blog .aside-card-content a {
+	text-decoration: none;
+}
+
+.blog .aside-card-content span {
+	color: inherit;
+	float: right;
+}
